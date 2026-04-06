@@ -6,7 +6,7 @@ A Script that builds Five night's at NCZ game made by MM33 to a usable linux exe
 *Note: make sure you have `unzip`and`wget` packages installed beforehand*
 - Run this command line
 ```
-wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/installer.sh && chmod +x installer.sh && ./installer.sh
+wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/fnancz-installer1.sh && chmod +x fnancz-installer1.sh && ./fnancz-installer1.sh
 ```
 Good luck, the game is installed
 If there were errors during the installation, dm me on discord.
