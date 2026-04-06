@@ -1,3 +1,4 @@
+echo -e "\e[31mP.S: you must give full path of the zip not a shortcut like '$HOME'\e[0m"
 read -r -p "Where is the path that you have the zip of the game downloaded? Defaulted=Downloads:" path
 cd "$HOME/Downloads"
 cd "$path" # kinda stupid way that handles the operation but eh works for now
