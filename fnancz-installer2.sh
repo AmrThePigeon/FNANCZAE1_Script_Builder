@@ -19,7 +19,7 @@ rm NekoPresence_x64.dll
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/Five_Nights_at_NCZ_AE
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/lib.zip
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/run.sh
-wget {nekopresencelink}
+wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/libNekoPresence_x64_linux_arm64-v8a.so
 mv libNekoPresence_x64_linux_arm64-v8a.so assets
 unzip lib.zip
 rm lib.zip
