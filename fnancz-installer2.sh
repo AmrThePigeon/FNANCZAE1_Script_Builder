@@ -17,5 +17,11 @@ mv "options.ini" "assets"
 mv "assets/data.win" "assets/game.unx"
 rm NekoPresence_x64.dll
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/Five_Nights_at_NCZ_AE
+wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/lib.zip
+wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/run.sh
+wget {nekopresencelink}
+mv libNekoPresence_x64_linux_arm64-v8a.so assets
+unzip lib.zip
+rm lib.zip
 chmod +x Five_Nights_at_NCZ_AE
 chmod +x run.sh
