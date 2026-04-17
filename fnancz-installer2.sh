@@ -15,7 +15,7 @@ mv "data.win" "assets"
 mv "6am_animation.mp4" "assets"
 mv "options.ini" "assets"
 rm NekoPresence_x64.dll
-xdelta3 -d -s "assets/data.win" game.unx.xdelta "assets/game.unx"
+xdelta3 -d -s "assets/data.win" game1.3.0.unx.xdelta "assets/game.unx"
 rm game.unx.xdelta
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/Five_Nights_at_NCZ_AE
 chmod +x Five_Nights_at_NCZ_AE
