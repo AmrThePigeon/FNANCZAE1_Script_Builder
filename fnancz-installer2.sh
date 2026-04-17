@@ -20,6 +20,8 @@ wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/ref
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/lib.zip
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/run.sh
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/libNekoPresence_x64_linux_arm64-v8a.so
+wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/icon.png
+mv icon.png assets
 mv libNekoPresence_x64_linux_arm64-v8a.so assets
 unzip lib.zip
 rm lib.zip
