@@ -17,6 +17,7 @@ mv "options.ini" "assets"
 rm NekoPresence_x64.dll
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/game1.3.0.unx.xdelta
 xdelta3 -d -s "assets/data.win" game1.3.0.unx.xdelta "assets/game.unx"
-rm game.unx.xdelta
+rm game1.3.0.unx.xdelta
+rm "assets/data.win"
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/Five_Nights_at_NCZ_AE
 chmod +x Five_Nights_at_NCZ_AE
