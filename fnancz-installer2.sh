@@ -14,10 +14,8 @@ rm "Five Nights at NCZ AE.exe"
 mv "data.win" "assets"
 mv "6am_animation.mp4" "assets"
 mv "options.ini" "assets"
+mv "assets/data.win" "assets/game.unx"
 rm NekoPresence_x64.dll
-wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/game1.3.0.unx.xdelta
-xdelta3 -d -s "assets/data.win" game1.3.0.unx.xdelta "assets/game.unx"
 wget https://raw.githubusercontent.com/AmrThePigeon/FNANCZAE1_Script_Builder/refs/heads/main/Five_Nights_at_NCZ_AE
-rm game1.3.0.unx.xdelta  
-rm "assets/data.win"
 chmod +x Five_Nights_at_NCZ_AE
+chmod +x run.sh
