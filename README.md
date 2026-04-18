@@ -21,5 +21,5 @@ rm -f fnancz-installer1.sh >/dev/null 2>&1 && wget https://raw.githubusercontent
 ```
 Good luck, the game is installed
 If there were errors during the installation, dm me on discord.
-(and don't mind the wget and curl in same needs because I couldn't test it due to some problems with my packages)
+(and don't mind the wget being used instead of  curl although curl might be more reliable but I couldn't use it because I couldn't test it due to some problems with my packages)
 see ya next time
