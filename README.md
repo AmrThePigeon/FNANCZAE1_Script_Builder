@@ -1,6 +1,7 @@
 # FNANCZAE1_Script_Builder
 
-A Script that builds Five night's at NCZ game made by MM33 to a usable linux executable
+A Script that builds Five Night's at NCZ game made by MM33 to a usable linux executable
+*Basically a FNAF fan made game.*
 
 # Linux Installation Guide
 **FOR VERSIONS 1.3.0+**
