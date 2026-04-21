@@ -1,11 +1,11 @@
 echo -e "\e[31mP.S: you must give full path of the zip not a shortcut\e[0m"
 read -r -p "Where is the path that you have the zip of the game downloaded? Defaulted=Downloads:" path
-if [ -d "$path/Five Nights at NCZ AE" ]; then
+cd "$HOME/Downloads"
+cd "$path" # kinda stupid way that handles the operation but eh works for now
+if [ -d "Five Nights at NCZ AE" ]; then
   echo "Error: Directory exists. Aborting."
   exit 1
 fi
-cd "$HOME/Downloads"
-cd "$path" # kinda stupid way that handles the operation but eh works for now
 gamezip=$(ls -v -r 'Five Nights at NCZ AE v'* | head -n 1)
 gamename="Five Nights at NCZ AE"
 mkdir "$gamename"
