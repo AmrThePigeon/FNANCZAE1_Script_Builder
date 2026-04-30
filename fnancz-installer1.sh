@@ -10,7 +10,13 @@ gamename="Five Nights at NCZ AE"
 
 cd "$HOME/Downloads"
 cd "$path" # kinda stupid way that handles the operation but eh works for now
-gamezip=$(ls -v -r 'Five Nights at NCZ AE v'* | head -n 1)
+unsupportedzip=$(ls -v -r 'Five Nights at NCZ AE v1.3'* | read -n 1)
+if [ -f "$unsupportedzip" ]; then
+    echo -e "\e[31mError: Game zip of version later than 1.3.0 is unsupported. Delete the newer zip or move it to another place to be able to use the script.\e[0m"
+    exit 1
+fi
+
+gamezip=$(ls -v -r 'Five Nights at NCZ AE v'* | read -n 1)
 if [ ! -f "$gamezip" ]; then
     echo -e "\e[31mError: the game zip file doesn't exist in $(pwd -L)!\e[0m"
     exit 1
