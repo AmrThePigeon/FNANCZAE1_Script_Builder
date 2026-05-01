@@ -1,6 +1,6 @@
 scriptlocation=$(pwd -L)
 scriptdeletion() {
-rm -f "$scriptlocation/fnancz2-installer1.sh"
+rm -f "$scriptlocation/fnancz-installer1.sh"
 }
 trap scriptdeletion EXIT
 
@@ -17,6 +17,8 @@ if [ -f "$unsupportedzip" ]; then
 fi
 
 gamezip=$(ls -v -r 'Five Nights at NCZ AE v'* | read -n 1)
+gamezip2=$(ls -v -r 'Five+Nights+at+NCZ+AE+v'* | head -n 1)
+mv "$gamezip2" "${gamezip2//+/ }"  > /dev/null 2>&1
 if [ ! -f "$gamezip" ]; then
     echo -e "\e[31mError: the game zip file doesn't exist in $(pwd -L)!\e[0m"
     exit 1
