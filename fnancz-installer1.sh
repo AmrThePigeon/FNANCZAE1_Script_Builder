@@ -16,11 +16,11 @@ gamename="Five Nights at NCZ AE"
 cd "$HOME/Downloads" > /dev/null 2>&1 
 cd "$path" > /dev/null 2>&1 # kinda stupid way that handles the operation but eh works for now
 
-gamezip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v* 2>/dev/null | head -n 1)
 gamezip2=$(ls -v -r 'Five+Nights+at+NCZ+AE+v'* 2>/dev/null | head -n 1)
 if [ -f "$gamezip2" ]; then
     mv "$gamezip2" "${gamezip2//+/ }"
 fi
+gamezip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v* 2>/dev/null | head -n 1)
 
 if [ -d "$gamename" ]; then
     echo -e "\e[31mError: '$gamename' folder already exists at this location!\e[0m"
