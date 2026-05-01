@@ -8,8 +8,8 @@ echo -e "\e[31mP.S: you must give full path of the zip not a shortcut\e[0m"
 read -r -p "Where is the path that you have the zip of the game downloaded? Defaulted=Downloads:" path
 gamename="Five Nights at NCZ AE"
 
-cd "$HOME/Downloads"
-cd "$path" # kinda stupid way that handles the operation but eh works for now
+cd "$HOME/Downloads" 2>/dev/null
+cd "$path" 2>/dev/null # kinda stupid way that handles the operation but eh works for now
 gamezip2=$(ls -v -r 'Five+Nights+at+NCZ+AE+v'* 2>/dev/null | head -n 1)
 if [ -f "$gamezip2" ]; then
     mv "$gamezip2" "${gamezip2//+/ }"
