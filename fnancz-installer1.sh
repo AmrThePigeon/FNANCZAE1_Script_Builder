@@ -21,16 +21,15 @@ if [ -f "$gamezip2" ]; then
     mv "$gamezip2" "${gamezip2//+/ }"
 fi
 gamezip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v* 2>/dev/null | head -n 1)
-
-if [ -d "$gamename" ]; then
-    echo -e "\e[31mError: '$gamename' folder already exists at this location!\e[0m"
-    exit 1
-fi
-
 if [ ! -f "$gamezip" ]; then
     echo -e "\e[31mError: the game zip file doesn't exist in $(pwd -L)!\e[0m"
     exit 1
 
+fi
+
+if [ -d "$gamename" ]; then
+    echo -e "\e[31mError: '$gamename' folder already exists at this location!\e[0m"
+    exit 1
 fi
 
 mkdir "$gamename"
