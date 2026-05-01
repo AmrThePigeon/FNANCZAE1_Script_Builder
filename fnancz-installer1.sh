@@ -3,7 +3,7 @@ scriptdeletion() {
 rm -f "$scriptlocation/fnancz-installer1.sh"
 }
 trap scriptdeletion EXIT
-unsupportedzip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v1.3* | head -n 1)
+unsupportedzip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v1.3* | head -n 1 2>/dev/null)
 if [ -f "$unsupportedzip" ]; then
     echo -e "\e[31mError: Game zip of version later than 1.2.0 is unsupported. Delete the newer zip or move it to another place to be able to use the script.\e[0m"
     exit 1
@@ -16,8 +16,8 @@ gamename="Five Nights at NCZ AE"
 cd "$HOME/Downloads" > /dev/null 2>&1 
 cd "$path" > /dev/null 2>&1 # kinda stupid way that handles the operation but eh works for now
 
-gamezip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v* > /dev/null 2>&1 | head -n 1 > /dev/null 2>&1 )
-gamezip2=$(ls -v -r 'Five+Nights+at+NCZ+AE+v'* > /dev/null 2>&1 | head -n 1 > /dev/null 2>&1 )
+gamezip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v* > /dev/null 2>&1 | head -n 1 2>/dev/null)
+gamezip2=$(ls -v -r 'Five+Nights+at+NCZ+AE+v'* > /dev/null 2>&1 | head -n 1 2>/dev/null)
 mv "$gamezip2" "${gamezip2//+/ }"  > /dev/null 2>&1
 
 if [ -d "$gamename" ]; then
