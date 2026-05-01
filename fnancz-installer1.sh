@@ -13,12 +13,15 @@ echo -e "\e[31mP.S: you must give full path of the zip not a shortcut\e[0m"
 read -r -p "Where is the path that you have the zip of the game downloaded? Defaulted=Downloads:" path
 gamename="Five Nights at NCZ AE"
 
-cd "$HOME/Downloads"
-cd "$path" # kinda stupid way that handles the operation but eh works for now
+cd "$HOME/Downloads" > /dev/null 2>&1 
+cd "$path" > /dev/null 2>&1 # kinda stupid way that handles the operation but eh works for now
 
-gamezip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v* | head -n 1)
-gamezip2=$(ls -v -r 'Five+Nights+at+NCZ+AE+v'* | head -n 1)
+gamezip=$(ls -v -r Five\ Nights\ at\ NCZ\ AE\ v* > /dev/null 2>&1 | head -n 1)
+gamezip2=$(ls -v -r 'Five+Nights+at+NCZ+AE+v'* > /dev/null 2>&1 | head -n 1)
 mv "$gamezip2" "${gamezip2//+/ }"  > /dev/null 2>&1
+sleep 1
+
+
 if [ ! -f "$gamezip" ]; then
     echo -e "\e[31mError: the game zip file doesn't exist in $(pwd -L)!\e[0m"
     exit 1
